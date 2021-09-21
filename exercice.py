@@ -20,20 +20,24 @@ def use_prefixes() -> List[str]:
     return [nombre_combines]
 
 def prime_integer_summation() -> int:
-    n=2
-    d=2
-    liste=[]
-    for i in range (1000):
-        while n%d!=0:
-            d=d+1
-            if d==n:
+    n = 2
+    d = 2
+    liste = []
+    for i in range (550):
+        n += 1
+        d = 2
+        while n % d != 0:
+            d += 1
+            if d == n:
                 liste.append(n)
-    n=n+1
-    d=2
-    return liste
+    return sum(liste)
 
 def factorial(number: int) -> int:
-    return 0
+    factoriel = 1
+    maliste = range(1,number)
+    for chiffre in maliste:
+        factoriel *= chiffre
+    return factoriel
 
 
 def use_continue() -> None:
