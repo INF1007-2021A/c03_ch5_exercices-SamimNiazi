@@ -14,16 +14,16 @@ def convert_to_absolute(number: float) -> float:
 
 def use_prefixes() -> List[str]:
     prefixes, suffixe = 'JKLMNOPQ', 'ack'
-    nombre_combines = ''
+    nombre_combines = []
     for lettre in prefixes:
-        nombre_combines += lettre + suffixe + ' '
-    return [nombre_combines]
+        nombre_combines.append (lettre + suffixe)
+    return nombre_combines
 
 def prime_integer_summation() -> int:
     n = 2
     d = 2
-    liste = []
-    for i in range (550):
+    liste = [2]
+    for i in range (540):
         n += 1
         d = 2
         while n % d != 0:
