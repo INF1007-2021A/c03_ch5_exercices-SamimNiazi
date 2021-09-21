@@ -41,11 +41,9 @@ def factorial(number: int) -> int:
 
 def use_continue() -> None:
     liste2=[]
-    for chiffres in range(1,10):
+    for chiffres in range(1,11):
         if chiffres != 5:
-            liste2.append(chiffres)    
-        else:
-            continue    
+            liste2.append(chiffres)   
     return liste2
 
 
